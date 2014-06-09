@@ -312,6 +312,8 @@ EJDB_EXPORT bson* ejdbloadbson(EJCOLL *coll, const bson_oid_t *oid);
  *          - {.., '$upsert' : {'fpath1' : val1, 'fpathN' : valN}}
  *      $inc Increment operation. Only number types are supported.
  *          - {.., '$inc' : {'fpath1' : number, ...,  'fpath2' : number}
+ *      $unset Field removal operation.
+ *          - {.., '$unset':{'fpath1':true,'fpathN':true}}
  *      $dropall In-place record removal operation.
  *          - {.., '$dropall' : true}
  *      $addToSet Atomically adds value to the array only if its not in the array already.
